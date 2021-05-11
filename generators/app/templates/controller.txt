@@ -1,0 +1,37 @@
+package com.rameshn.school.<%= rrname %>;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+@RestController
+public class <%= rrName %>Controller {
+    @Autowired
+    private <%= rrName %>ServiceClass <%= rrname %>Service;
+
+    public <%= rrName %>Controller(<%= rrName %>Service <%= rrname %>Service) {
+        this.<%= rrname %>Service = <%= rrname %>Service;
+    }
+
+    @GetMapping("/<%= rrname %>s")
+    public List<<%= rrName %>> getAll<%= rrnameinmethod %>s(){
+        List<<%= rrName %>> <%= rrname %>s = <%= rrname %>Service.getAll<%= rrName %>s();
+        return <%= rrname %>s;
+    }
+    @GetMapping("/<%= rrname %>s/{<%=rrpk%>}")
+        <%= rrName %> <%= rrname %> = <%= rrname %>Service.get<%= rrnameinmethod %>(<%=rrpk%>);
+        return <%= rrname %>;
+    }
+    @PostMapping("/<%= rrname %>s/")
+    public void  add<%= rrnameinmethod %>(@RequestBody <%= rrName %> <%= rrname %>){
+        <%= rrname %>Service.add<%= rrnameinmethod %>(<%= rrname %>);
+    }
+    @PutMapping ("/<%= rrname %>s/{<%=rrpk%>}")
+    public void  update<%= rrnameinmethod %>(@RequestBody <%= rrName %> <%= rrname %>,@PathVariable <%=rrpktype%> <%=rrpk%>%){
+        <%= rrname %>Service.update<%= rrname %>(<%= rrname %>,<%=rrpk%>);
+    }
+    @DeleteMapping("/<%= rrname %>s/{<%=rrpk%>}")
+    public void  delete<%= rrnameinmethod %>(@PathVariable <%= rrpktype %> <%=rrpk%>){
+        <%= rrname %>Service.delete<%= rrnameinmethod %>(<%=rrpk%>);
+    }
+}
