@@ -51,6 +51,19 @@ module.exports = class extends Generator {
       this.destinationPath('controller.txt'),
       this.props
     );
+    this.fs.copyTpl(
+      this.templatePath('repository.txt'),
+      this.destinationPath('repository.txt'),
+      this.props
+    );
+    this.fs.copyTpl(
+      this.templatePath('service.txt'),
+      this.destinationPath('service.txt'),
+      this.props
+    );
+
+
+
   }
 
   // capitalizeFirstLetter(string) {

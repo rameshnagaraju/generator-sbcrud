@@ -1,0 +1,7 @@
+package com.rameshn.school.<%= rrname %>;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface <%= rrName %>Repository extends CrudRepository<<%= rrName %>,<%= rrpktype %>> {
+
+}

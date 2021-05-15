@@ -1,0 +1,41 @@
+package com.rameshn.school.<%= rrname  %>;
+
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+@Service
+public class <%= rrName  %>ServiceClass {
+
+    
+    public List<<%= rrName  %>>  getAll<%= rrName  %>s(){
+
+       // create a list 
+        List<<%= rrName  %>> <%= rrname  %>s = new ArrayList<<%= rrName  %>>();
+
+       // findAll returns an iterable
+        <%= rrname  %>Repository.findAll()
+        .forEach(<%= rrname  %>s::add);
+        return <%= rrname  %>s;
+
+    }
+
+    public <%= rrName  %> get<%= rrName  %>(<%= rrpktype %> <%= rrpk  %>){
+        return <%= rrname  %>Repository.findOne(<%= rrpk  %>)
+    }
+
+    public void  add<%= rrName  %>(<%= rrName  %> <%= rrname  %>){
+         <%= rrname  %>Repository.save(<%= rrname  %>);
+    }
+
+    public void  update<%= rrName  %>(<%= rrName  %> <%= rrname  %>, <%= rrpktype %> <%= rrpk  %>){
+        <%= rrname  %>Repository.save(<%= rrname  %>);
+    }
+
+    public void delete<%= rrName  %>(<%= rrpktype %> <%= rrpk  %>){
+        <%= rrname  %>Repository.delete(<%= rrpk  %>);
+    }
+
+}

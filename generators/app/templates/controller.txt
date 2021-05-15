@@ -27,7 +27,7 @@ public class <%= rrName %>Controller {
         <%= rrname %>Service.add<%= rrnameinmethod %>(<%= rrname %>);
     }
     @PutMapping ("/<%= rrname %>s/{<%=rrpk%>}")
-    public void  update<%= rrnameinmethod %>(@RequestBody <%= rrName %> <%= rrname %>,@PathVariable <%=rrpktype%> <%=rrpk%>%){
+    public void  update<%= rrnameinmethod %>(@RequestBody <%= rrName %> <%= rrname %>,@PathVariable <%=rrpktype%> <%=rrpk%>){
         <%= rrname %>Service.update<%= rrname %>(<%= rrname %>,<%=rrpk%>);
     }
     @DeleteMapping("/<%= rrname %>s/{<%=rrpk%>}")
