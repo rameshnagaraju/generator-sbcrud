@@ -1,8 +1,8 @@
 # generator-sbcrud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A generator to generate crud mvc code
 
-## watch a demo on 
-https://youtu.be/Fl_KWgQNTDA
+## watch a demo on (private video)
+https://www.youtube.com/watch?v=SZJ2wX0bcWU
 
 ## Installation
 
