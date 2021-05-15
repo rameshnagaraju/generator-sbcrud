@@ -1,6 +1,9 @@
 # generator-sbcrud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A generator to generate crud mvc code
 
+## watch a demo on 
+https://youtu.be/Fl_KWgQNTDA
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-sbcrud using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
