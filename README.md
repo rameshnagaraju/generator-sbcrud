@@ -36,3 +36,4 @@ Apache-2.0 © [Ramesh N]()
 [daviddm-url]: https://david-dm.org/rameshnagaraju/generator-sbcrud
 [coveralls-image]: https://coveralls.io/repos/rameshnagaraju/generator-sbcrud/badge.svg
 [coveralls-url]: https://coveralls.io/r/rameshnagaraju/generator-sbcrud
+# generator-sbcrud
