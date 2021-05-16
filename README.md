@@ -1,8 +1,8 @@
 # generator-sbcrud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> A generator to generate crud mvc code
+> A generator to generate crud mvc code for spring boot. I made this to escape typing the boilerplate code for crud apps.
 
 ## watch a demo on (private video)
-https://www.youtube.com/watch?v=SZJ2wX0bcWU
+https://www.youtube.com/watch?v=-WQkKItQQmU
 
 ## Installation
 
